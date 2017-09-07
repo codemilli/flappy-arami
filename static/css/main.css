@@ -1,0 +1,146 @@
+body {
+  background-color: black;
+  margin: 0;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
+.facebook-login {
+  display: none;
+  position: absolute;
+  width: 120px;
+  border: 0;
+  background: #3b5998;
+  color: white;
+  font-size: 19px;
+  padding: 5px;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.facebook-login > i {
+  margin-right: 10px;
+}
+
+#rank-view {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: none;
+}
+
+.dimmer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.5;
+  display: none;
+}
+
+.container-layer {
+  position: relative;
+  margin: 20px auto;
+  background-color: white;
+  width: calc(100% - 40px);
+  max-width: 500px;
+  opacity: 1;
+  border-radius: 4px;
+  padding: 20px 10px;
+  display: none;
+}
+
+.tab__rank {
+  padding-left: 0;
+  list-style: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab__rank li {
+  float: left;
+  margin-bottom: -1px;
+}
+
+.tab__rank li a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+
+.tab__rank li a.active {
+  color: #555;
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
+
+#user__wrap {
+  padding: 2px;
+  height: 34px;
+  line-height: 32px;
+}
+
+#user__wrap.me {
+  color: #337ab7;
+}
+
+#user__wrap .user__img__wrap {
+  float: left;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.user__rank {
+  float: left;
+  width: 35px;
+  margin-right: 6px;
+  font-size: 18px;
+}
+
+#user__wrap img {
+  position: absolute;
+  width: 100%;
+}
+
+.user__name {
+  display: inline-block;
+  max-width: 150px;
+  padding-left: 10px;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user__score {
+  float: right;
+  font-size: 17px;
+}
+
+.user-list__wrap ul {
+  margin: 0;
+  padding: 5px;
+  height: 350px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
